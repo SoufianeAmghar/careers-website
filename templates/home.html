@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <title>Soufiane's careers</title>
+    <style>
+      #banner{
+        height: 360px;
+        width: 100%;
+        object-fit:cover;
+      }
+    </style>
+  </head>
+
+  <body>
+      <div class="container">
+    <h1 class="text-center mt-2 mb-4">{{company_name}} careers</h1>
+    <img class="img-fluid"id="banner" src="https://careers-website.soufianeamghar1.repl.co/static/banner2.jpg"
+      height="320">
+        <h2 class="text-center mt-2 mb-4">About Soufiane</h2>
+        <p class="lead mt-2 mb-4">
+          
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vestibulum in ipsum eu condimentum. Ut mattis magna nunc, nec elementum eros laoreet at. Phasellus vulputate nulla sit amet tortor bibendum, vel lacinia justo varius. Phasellus feugiat interdum placerat. Nunc posuere ligula velit, ac rhoncus odio aliquam vel. Nam nec hendrerit lectus. Nulla elementum, nulla quis congue blandit, tortor metus euismod est, non dictum ex felis nec ante. Praesent pellentesque molestie semper.
+
+        </p>
+
+    <h2>Open positions:</h2>
+    <p class="bodytxt">
+
+        {%for job in jobs%}
+          {%include 'itemjob.html'%}
+        {%endfor%}
+      
+    </p>
+
+    <div class="text-center">
+    <button class="btn btn-primary btn-lg">Contact Us</button>
+      <p class="mt-4">Copyright 2023, Soufiane</p>
+    </div>
+    </div>
+
+
+
+
+    
+  </body>
+
+
+
+
+  
+</html>
